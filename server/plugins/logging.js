@@ -1,3 +1,6 @@
 module.exports = {
-  plugin: require('@hapi/log')
+  plugin: require('@hapi/log'),
+  options: {
+    level: 'debug'
+  }
 }

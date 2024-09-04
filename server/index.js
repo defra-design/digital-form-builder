@@ -1,10 +1,13 @@
 const hapi = require('@hapi/hapi')
 const config = require('./config')
 
+console.log('config', config)
+console.log('process', process)
+
 async function createServer () {
   // Create the hapi server
   const server = hapi.server({
-    port: process.env.PORT || config.port,
+    port: config.port,
     routes: {
       validate: {
         options: {
@@ -23,9 +26,9 @@ async function createServer () {
   await server.register(require('./plugins/router'))
   await server.register(require('./plugins/error-pages'))
 
-  if (config.isDev) {
+  // if (config.isDev) {
     await server.register(require('blipp'))
-  }
+  // }
 
   return server
 }
