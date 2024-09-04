@@ -4,15 +4,16 @@ const config = require('./config')
 async function createServer () {
   // Create the hapi server
   const server = hapi.server({
-    port: config.port,
+    port: process.env.PORT || config.port,
+    host: process.env.HOST,
     routes: {
       validate: {
         options: {
-          abortEarly: false
-        }
-      }
-    }
-  })
+          abortEarly: false,
+        },
+      },
+    },
+  });
 
   // Register the plugins
   await server.register(require('@hapi/inert'))
