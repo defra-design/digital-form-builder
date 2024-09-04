@@ -5,7 +5,6 @@ async function createServer () {
   // Create the hapi server
   const server = hapi.server({
     port: process.env.PORT || config.port,
-    host: process.env.HOST,
     routes: {
       validate: {
         options: {
