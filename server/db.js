@@ -1,4 +1,4 @@
-const hoek = require('hoek')
+const hoek = require('@hapi/hoek')
 
 /*
   Simple in-memory data store used for saving page state.
