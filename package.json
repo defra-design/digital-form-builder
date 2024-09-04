@@ -29,6 +29,7 @@
     "@hapi/log": "^2.0.1",
     "@hapi/vision": "^7.0.3",
     "@hapi/yar": "^11.0.2",
+    "blipp": "^4.0.2",
     "digital-form-builder-designer": "git://github.com/davidjamesstone/digital-form-builder-designer.git#dcdeb6ef5e411b02e0d8897f23215055b15d40e0",
     "digital-form-builder-engine": "git://github.com/davidjamesstone/digital-form-builder-engine.git#3f2cc989a505ca42492a30d9dc4b3e91cdf419a0",
     "govuk-frontend": "^5.3.1",
@@ -39,7 +40,6 @@
   "devDependencies": {
     "@hapi/code": "^9.0.3",
     "@hapi/lab": "^25.2.0",
-    "blipp": "4.0.2",
     "cheerio": "1.0.0-rc.12",
     "good": "8.1.1",
     "good-console": "7.1.0",
